@@ -1,0 +1,53 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color:black;
+}
+#wrapper{
+    background-color: white;
+    height: 80vh;
+    width:60vw;
+    margin-left:20vw;
+    margin-top:10vh;
+    border-radius:20px;
+    overflow:none;
+}
+#wrapper:hover{
+    animation:Rainbow .001s linear infinite;
+    background-color:mediumslateblue;
+}
+#text{
+    margin-left:0px;
+}
+#text:hover{
+animation:Shake .001s infinite linear;
+}
+
+@keyframes Rainbow{
+    0%{background-color: aqua;}
+    10%{background-color: burlywood;}
+    20%{background-color: red;}
+    30%{background-color: black;}
+    40%{background-color: gray;}
+    50%{background-color: greenyellow;}
+    60%{background-color: purple;}
+    70%{background-color: rgb(221, 219, 94);}
+    80%{background-color: rgb(189, 113, 189);}
+    90%{background-color: rgb(85, 22, 36);}
+    100%{background-color: rgb(212, 142, 85);}
+}
+@keyframes Shake{
+    0%{margin-left:4vw;}
+    10%{margin-left:1vw;}
+    20%{margin-left:4vw;}
+    30%{margin-left:1vw;}
+    40%{margin-left:4vw;}
+    50%{margin-left:1vw;}
+    60%{margin-left:4vw;}
+    70%{margin-left:1vw;}
+    80%{margin-left:4vw;}
+    90%{margin-left:1vw;}
+    100%{margin-left:4vw;}
+}
